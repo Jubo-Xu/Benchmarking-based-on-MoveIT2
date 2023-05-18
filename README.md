@@ -26,9 +26,29 @@ cd ..
 source /opt/ros/humble/setup.bash
 colcon build --mixin debug
 ```
-5. open another terminal and launch the RViz first
+5. open another terminal, source it, and launch the RViz first
 ```bash
 ros2 launch moveit2_tutorials demo.launch.py
 ```
-6. uncheck the **MotionPlanning** box in RViz
+6. uncheck the **MotionPlanning** box in RViz  
+
+![uncheck the MotionPlannign box](https://github.com/Jubo-Xu/Benchmarking-based-on-MoveIT2/blob/master/Image_benchmarking/Screenshot%202023-05-18%20212947.png?raw=true)  
+
+7. Add a new panel from **Panels** on the top of RViz  
+
+![Add a new panel](https://github.com/Jubo-Xu/Benchmarking-based-on-MoveIT2/blob/master/Image_benchmarking/add_panel.png?raw=true)
+
+8. Add a new marker array by clicking the **Add** button below  
+
+![Add marker array](https://github.com/Jubo-Xu/Benchmarking-based-on-MoveIT2/blob/master/Image_benchmarking/addmarkerarray.png?raw=true)
+
+9. Change the topic of markerarray to **/rviz_visual_tools**  
+
+![change the topic of marker array](https://github.com/Jubo-Xu/Benchmarking-based-on-MoveIT2/blob/master/Image_benchmarking/resettopic.png?raw=true)
+
+10. open a new terminal, source it, and run the package, the last argument is the test case to be tested
+```bash
+ros2 run hello_moveit hello_moveit --ros-args -r __node:=hello_moveit -- <testcase>
+```
+11. Follow the instruction on this terminal and generate the plan and execute it by cliking **Next** button below
 

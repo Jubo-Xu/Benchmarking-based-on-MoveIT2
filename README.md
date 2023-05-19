@@ -73,5 +73,5 @@ ros2 launch moveit2_tutorials demo.launch.py
 ```bash
 ros2 run hello_moveit hello_moveit --ros-args -r __node:=hello_moveit -- <testcase>
 ```
-11. Follow the instruction on this terminal and generate the plan and execute it by cliking **Next** button below
+11. Follow the instruction on the terminal to generate the plan and execute it by cliking **Next** button at the bottom left corner in RViz
 

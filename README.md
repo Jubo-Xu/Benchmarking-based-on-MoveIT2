@@ -13,6 +13,7 @@ This is a ROS2 package that is mainly used for benchmarking. The package is the 
 * Constraints would be added
 
 ## 15 Test cases
+The following are the specific testcases in this package. The index of the testcase can be passed as a ROS argument to directly control which testcase to use, as shown below.
 1. Test case 1: OMPL + no obstacle
 2. Test case 2: CHOMP + no obstacle
 3. Test case 3: STOMP + no obstacle
